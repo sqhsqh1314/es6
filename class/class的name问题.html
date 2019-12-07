@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset>
+		<title></title>
+	</head>
+	<body>
+		<script>
+			let A=class AA{
+				//AA只能在类里面使用
+				constructor(){
+					console.log(AA.name);
+				}
+				getA(){
+					console.log(AA.name);
+				}
+				
+			}
+//			let a=new AA();//不可以使用AA
+            let a=new A();
+			console.log(a);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			let promise1=new Promise((resolve,reject)=>{
+				console.log("33")
+				reject("asda");
+				let a=1;
+				let b=4;//有错误就会调用第二个函数
+				resolve("aaa");
+				
+			})
+			promise1.then((res)=>{
+				console.log(res);
+			},(e)=>{
+				console.log(e);
+			});
+			console.log("ok");
+		</script>
+	</body>
+</html>

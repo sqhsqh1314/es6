@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+
+	<body>
+		<script>
+			let {
+				aa,
+				bb
+			} = {
+				aa: "hello",
+				bb: "world"
+			};
+			console.log(aa);
+
+			//			console.log(cc);//报错
+			let {
+				aaff: gg,
+				bbb: fff
+			} = {
+				aaff: "asdsa",
+				bbb: "ads"
+			};
+			console.log(gg);
+			let {
+				foo: foo1,
+				bar: bar
+			} = {
+				foo: 'aaa',
+				bar: 'bbb'
+			};
+			console.log(foo1);
+			//设置默认值
+			let {x=1}={x:undefined};
+			console.log(x);
+			let {y=3}={y:null};
+			console.log(y);
+			
+		</script>
+	</body>
+
+</html>

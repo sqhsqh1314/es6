@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			let sym1=Symbol();
+			let obj={
+				name:"小明",
+				[sym1]:"asdhahhfa"
+			}
+			console.log(obj);
+			obj[sym1]="珠珠";
+			console.log(obj);
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//from方法：将类数组或者可遍历的对象转化为数组
+			let arry={
+				"0":1,
+				"1":2,
+				"2":3,
+				length:3
+			}
+			let arr=Array.from(arry,item=>item*2);
+			console.log(arr);
+			//找到一个符合条件的数组，如果没有返回undefined
+			var person=[{
+				name:"小李",
+				age:27				
+			},{
+				name:"小明",
+				age:20
+			}
+			]
+			let target=person.find((item,index)=>item.age==20);
+			console.log(target);
+			//findindex
+			var person=[{
+				name:"小李",
+				age:27				
+			},{
+				name:"小明",
+				age:20
+			}
+			]
+			let target1=person.findIndex((item,index)=>item.age==20);
+			console.log(target1);
+			//将一组数值转化为数组
+			var tt=Array.of("1","string",2);
+			console.log(tt);			
+		</script>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			
+			let p1=new Promise((resolve,reject)=>{
+				setTimeout(function (){
+					resolve("点击添加1");
+				},5000);
+					
+			});
+			let p2=new Promise((resolve,reject)=>{
+				setTimeout(function (){
+					resolve("点击添加2");
+				},3000);
+//				reject("出错了");	
+				
+							
+			});
+			let p3=new Promise((resolve,reject)=>{
+				setTimeout(function (){
+					resolve("点击添加3");
+				},4000);				
+			});
+			let pall=Promise.race([p1,p2,p3]);
+			pall.then((res)=>{
+				console.log(res);
+				console.log("点击成功");				
+			}).catch((e)=>{
+				console.log(e);
+				
+			});
+		</script>
+	</body>
+</html>

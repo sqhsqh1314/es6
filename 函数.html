@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//函数参数的默认值
+			//之前添加默认值的方法
+			function ff(x,y){
+				var xx=x|5;
+				console.log(xx);
+				
+			}
+			ff();
+			//es6函数参数的默认值
+			function ff1(a=9,b){
+				console.log(a);
+				
+			}
+			ff1();
+			//箭头函数
+//			function tt(num){
+//				return num;
+//				
+//			};
+			let tt= num=>num;
+			console.log(tt(44));
+			//它里面的this指向，函数定义位置的上下文this
+				
+			
+		</script>
+	</body>
+</html>

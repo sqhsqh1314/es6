@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			console.log(new Set([1,3,4,2,1,34,123,21]));
+			console.log(new Set("123466677667"));
+			function fn(){
+				console.log(new Set(arguments));
+			}
+			fn(1,2,34,4,4,5);
+			//添加与删除操作
+			let sett=new Set([1,2,"小敏",NaN,true]);
+			console.log(sett.add(200).add(30));
+			console.log(sett.delete(NaN));
+			console.log(sett);
+			//清空操作
+//			console.log(sett.clear());
+//			console.log(sett);
+             //判断有没有此项
+             console.log(sett.has(true));
+             //遍历set
+             sett.forEach((item,index,input)=>{
+             	console.log(item+input);
+             	
+             });
+
+			
+		</script>
+	</body>
+</html>

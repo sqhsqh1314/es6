@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			class A{
+				constructor (){
+					this.name="添加一个方法";
+				}
+				getA(){
+					console.log("哈哈");
+				}
+				static getB(){
+					console.log("static的静态方法");
+				}
+			}
+			let a=new A();
+			a.getA();
+//			a.getB();//无法调用
+			console.log(a.getB);
+			A.getB();
+		</script>
+	</body>
+</html>

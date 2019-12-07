@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var p1=new Promise((resolve,reject)=>{
+				resolve("珠峰");
+				
+			});
+			async function ff(){
+				let a=await p1;
+				return a;
+			}
+			ff().then((res)=>{
+				console.log(res);
+				
+			}).catch((e)=>{
+				console.log(e);
+			})
+		</script>
+	</body>
+</html>

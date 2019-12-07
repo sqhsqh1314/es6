@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//对目标对象的默认操作的拦截
+			let obj={
+				name:"小明",
+				age:12
+			};
+			let proxy1=new Proxy(obj,{
+				get(target,key,proxy){
+					console.log("get拦截");
+					return target[key];
+					
+				},
+				set(target,propkey,value,receiver){
+					target[propkey]=value;
+					return true;
+					
+				},
+				has(target,propkey){
+					console.log("has");
+					return propkey in target;
+					
+				}
+			});
+			
+			console.log(proxy1.name);
+			proxy1.age=18;
+			console.log(proxy1.age);
+			console.log("name1" in proxy1);
+			
+		</script>
+	</body>
+</html>

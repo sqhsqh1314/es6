@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var obj={
+				name:"小敏",
+				age:23
+				
+			}
+			var obj1={
+				name:"小李",
+				sex:"男"
+			}
+			console.log(Object.getOwnPropertyDescriptor("asdada","length"));
+			let str="asdada";
+//			str.length=0;
+//对象的扩展运算符
+            var school={...obj,...obj1};
+            console.log(Object.keys(school));            
+            
+            console.log(Object.values(school));
+            //获取所有的键值
+            console.log(Object.entries(school));
+            
+
+            
+            
+            
+            
+
+			
+			
+		</script>
+	</body>
+</html>

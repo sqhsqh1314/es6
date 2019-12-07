@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			class FF{
+				construtor (ff){
+					this.ff="asdad";					
+				}
+				getF(){
+					console.log("我是父类的方法");					
+				}
+				static getFF(){
+					console.log("添加点击事件");
+				}
+			}
+			class A extends FF{
+				constructor(ff){
+					super(ff);
+					this.y="1231";
+					
+				}
+				getA(){
+					super.getF();
+				}
+				static getAA(){
+					super.getFF();
+				}
+				
+			}
+			let aa=new A;
+			aa.getA();
+//			aa.getAA();报错
+			A.getAA();
+		</script>
+	</body>
+</html>

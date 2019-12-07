@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//以前的写法
+//			let a=1;
+//			let b=1;
+//			let c=3;
+			//构析赋值
+			let [a,b,c]=[1,1,3];
+			console.log(b);
+			let [d,[[e],f]]=[2,[[3],5]];
+			console.log(e);
+			let [,,g]=["as","asd","sd"];
+			console.log(g);
+			let [nn,...mm]=[2,5,67,43];
+			console.log(mm);
+			//如果构析不成功就为undefined
+			let [foo]=[];
+			console.log(foo);
+			
+		</script>
+	</body>
+</html>

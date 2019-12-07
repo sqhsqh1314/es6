@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			let obj={
+				_name:"AA",
+				get name(){
+				
+					console.log("你获取了属性值");
+					return this._name;
+					
+				},
+				set name(val){
+					console.log("你设置这个值");
+					this._name=val;
+					
+					
+				}
+				
+				
+			}
+			console.log(obj.name);
+				obj.name="珠峰";
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
